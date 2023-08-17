@@ -1,9 +1,8 @@
-import Order from '../../domain/checkout/entities/order'
-import { OrderItem } from '../../domain/checkout/entities/order_item'
-import { OrderRepositoryInterface } from '../../domain/checkout/repositories/order-repository.interfaces'
-import { OrderItemModel } from '../db/sequelize/model/order-item.model'
-import { OrderModel } from '../db/sequelize/model/order.mode.'
-import { ProductModel } from '../product/repositories/sequelize/product.model'
+import Order from '../../../../domain/checkout/entities/order'
+import { OrderItem } from '../../../../domain/checkout/entities/order_item'
+import { OrderRepositoryInterface } from '../../../../domain/checkout/repositories/order-repository.interfaces'
+import { OrderItemModel } from './order-item.model'
+import { OrderModel } from './order.mode.'
 
 export class OrderRepository implements OrderRepositoryInterface {
   findByDate(date: Date): Promise<Order> {
