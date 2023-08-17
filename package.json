@@ -1,0 +1,29 @@
+{
+  "name": "04-ddd-modelagem-tatica-patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run tsc -- --noEmit && vitest run",
+    "test:watch": "npm run tsc -- --noEmit && vitest",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@vitest/ui": "^0.34.1",
+    "eslint": "^8.46.0",
+    "sequelize-typescript": "^2.1.5",
+    "sqlite3": "^5.1.6",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.32.1"
+  }
+}
