@@ -1,5 +1,4 @@
-import { Customer } from '../../../entities/customer'
-import { EventDispatcher } from '../../@shared/event-dispatcher'
+import { EventDispatcher } from '../../../@shared/event/event-dispatcher'
 import { CustomerEvent } from '../customer.event'
 import { CustomerCreatedHandler } from './customer-created-handler'
 

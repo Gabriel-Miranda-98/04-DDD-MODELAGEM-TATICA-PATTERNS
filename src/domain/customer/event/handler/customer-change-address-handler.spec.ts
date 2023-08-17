@@ -1,8 +1,8 @@
-import { Address } from '../../../entities/address'
-import { Customer } from '../../../entities/customer'
-import { EventDispatcher } from '../../@shared/event-dispatcher'
+import { Address } from '../../value-object/address'
+import { EventDispatcher } from '../../../@shared/event/event-dispatcher'
 import { CustomerChangeAddressEvent } from '../customer-change-address'
 import { CustomerChangeAddressHandler } from './customer-change-address-handler'
+import { Customer } from '../../entities/customer'
 
 describe('CustomerChangeAddressHandler Tests', () => {
   it('should notify event change address handler', () => {
