@@ -1,7 +1,7 @@
-import { Address } from '../../domain/customer/value-object/address'
-import { CustomerRepositoryInterface } from '../../domain/customer/repositories/customer-repository.interfaces'
-import { CustomerModel } from '../db/sequelize/model/customer.mode'
-import { Customer } from '../../domain/customer/entities/customer'
+import { Customer } from '../../../../domain/customer/entities/customer'
+import { CustomerRepositoryInterface } from '../../../../domain/customer/repositories/customer-repository.interfaces'
+import { Address } from '../../../../domain/customer/value-object/address'
+import { CustomerModel } from './customer.mode'
 
 export class CustomerRepository implements CustomerRepositoryInterface {
   async findByName(name: string): Promise<Customer> {

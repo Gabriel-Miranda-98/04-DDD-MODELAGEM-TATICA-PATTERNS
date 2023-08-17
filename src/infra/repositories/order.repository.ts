@@ -3,7 +3,7 @@ import { OrderItem } from '../../domain/checkout/entities/order_item'
 import { OrderRepositoryInterface } from '../../domain/checkout/repositories/order-repository.interfaces'
 import { OrderItemModel } from '../db/sequelize/model/order-item.model'
 import { OrderModel } from '../db/sequelize/model/order.mode.'
-import { ProductModel } from '../db/sequelize/model/product.model'
+import { ProductModel } from '../product/repositories/sequelize/product.model'
 
 export class OrderRepository implements OrderRepositoryInterface {
   findByDate(date: Date): Promise<Order> {

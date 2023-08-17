@@ -7,7 +7,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript'
-import { CustomerModel } from './customer.mode'
+import { CustomerModel } from '../../../customer/repositories/sequelize/customer.mode'
 import { OrderItemModel } from './order-item.model'
 
 @Table({ tableName: 'orders', timestamps: false })
